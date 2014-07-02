@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">32 methods, 1 failed,   31 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="LogInInstallationList">LogInInstallationList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="CopyrightText">CopyrightText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeArrowLeftBtn">HomeArrowLeftBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeArrowRightBtn">HomeArrowRightBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeHC1Name">HomeHC1Name</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeHCArrowSwitch">HomeHCArrowSwitch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeHelpBtn">HomeHelpBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeHelpCheck">HomeHelpCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeHelpcheck2ndHC">HomeHelpcheck2ndHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeMenuBtn">HomeMenuBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeMenuBtnMultipleClick">HomeMenuBtnMultipleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeOperationModeBtn">HomeOperationModeBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeOperationModeBtn2ndHC">HomeOperationModeBtn2ndHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeOperationModeBtnAction1stHC">HomeOperationModeBtnAction1stHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeOperationModeBtnAction2ndHC">HomeOperationModeBtnAction2ndHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeRefreshBtn">HomeRefreshBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeRoomTempMinusBtn">HomeRoomTempMinusBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeRoomTempMiusBtnClick1stHC">HomeRoomTempMiusBtnClick1stHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeRoomTempMiusBtnClick2ndHC">HomeRoomTempMiusBtnClick2ndHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeRoomTempPlusBtn">HomeRoomTempPlusBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeRoomTempPlusBtnClick1stHC">HomeRoomTempPlusBtnClick1stHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="HomeRoomTempPlusBtnClick2ndHC">HomeRoomTempPlusBtnClick2ndHC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="InstallationListMultipleBack">InstallationListMultipleBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="IntallationListLabels">IntallationListLabels</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="LogIn">LogIn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="LogInMultipleBack">LogInMultipleBack</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="LoginToIntallation">LoginToIntallation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="logInBUtton">logInBUtton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="splashButtonHelpActionCheck">splashButtonHelpActionCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="splashButtonHelpContentCheck">splashButtonHelpContentCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="splashHelpPresentCheck">splashHelpPresentCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.java.com.viessmann.vitotrol.appiumtest.MainTest" hash-for-method="splashShowcaseButtonCheck">splashShowcaseButtonCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.java.com.viessmann.vitotrol.appiumtest.MainTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogInInstallationList">
+                  </a> <!-- LogInInstallationList -->
+                  <span class="method-name">LogInInstallationList</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 293 milliseconds
+Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6b&apos;, time: &apos;2013-08-12 15:43:19&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.3&apos;, java.version: &apos;1.7.0_40&apos;
+Session ID: c7ce7b0e-74e5-4cbb-aa2e-1ef877c16ac4
+Driver info: test.java.com.viessmann.vitotrol.appiumtest.SetUp$SwipeableWebDriver
+Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, desired={platformVersion=7.1, platformName=iOS, device=iphone, language=en}, locationContextEnabled=false, platformVersion=7.1, databaseEnabled=false, platformName=iOS, webStorageEnabled=false, device=iphone, language=en, warnings={}, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at test.java.com.viessmann.vitotrol.appiumtest.MainTest.LogInInstallationList(MainTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.java.com.viessmann.vitotrol.appiumtest.MainTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CopyrightText">
+                  </a> <!-- CopyrightText -->
+                  <span class="method-name">CopyrightText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeArrowLeftBtn">
+                  </a> <!-- HomeArrowLeftBtn -->
+                  <span class="method-name">HomeArrowLeftBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeArrowRightBtn">
+                  </a> <!-- HomeArrowRightBtn -->
+                  <span class="method-name">HomeArrowRightBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeHC1Name">
+                  </a> <!-- HomeHC1Name -->
+                  <span class="method-name">HomeHC1Name</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeHCArrowSwitch">
+                  </a> <!-- HomeHCArrowSwitch -->
+                  <span class="method-name">HomeHCArrowSwitch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeHelpBtn">
+                  </a> <!-- HomeHelpBtn -->
+                  <span class="method-name">HomeHelpBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeHelpCheck">
+                  </a> <!-- HomeHelpCheck -->
+                  <span class="method-name">HomeHelpCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeHelpcheck2ndHC">
+                  </a> <!-- HomeHelpcheck2ndHC -->
+                  <span class="method-name">HomeHelpcheck2ndHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeMenuBtn">
+                  </a> <!-- HomeMenuBtn -->
+                  <span class="method-name">HomeMenuBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeMenuBtnMultipleClick">
+                  </a> <!-- HomeMenuBtnMultipleClick -->
+                  <span class="method-name">HomeMenuBtnMultipleClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeOperationModeBtn">
+                  </a> <!-- HomeOperationModeBtn -->
+                  <span class="method-name">HomeOperationModeBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeOperationModeBtn2ndHC">
+                  </a> <!-- HomeOperationModeBtn2ndHC -->
+                  <span class="method-name">HomeOperationModeBtn2ndHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeOperationModeBtnAction1stHC">
+                  </a> <!-- HomeOperationModeBtnAction1stHC -->
+                  <span class="method-name">HomeOperationModeBtnAction1stHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeOperationModeBtnAction2ndHC">
+                  </a> <!-- HomeOperationModeBtnAction2ndHC -->
+                  <span class="method-name">HomeOperationModeBtnAction2ndHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeRefreshBtn">
+                  </a> <!-- HomeRefreshBtn -->
+                  <span class="method-name">HomeRefreshBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeRoomTempMinusBtn">
+                  </a> <!-- HomeRoomTempMinusBtn -->
+                  <span class="method-name">HomeRoomTempMinusBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeRoomTempMiusBtnClick1stHC">
+                  </a> <!-- HomeRoomTempMiusBtnClick1stHC -->
+                  <span class="method-name">HomeRoomTempMiusBtnClick1stHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeRoomTempMiusBtnClick2ndHC">
+                  </a> <!-- HomeRoomTempMiusBtnClick2ndHC -->
+                  <span class="method-name">HomeRoomTempMiusBtnClick2ndHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeRoomTempPlusBtn">
+                  </a> <!-- HomeRoomTempPlusBtn -->
+                  <span class="method-name">HomeRoomTempPlusBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeRoomTempPlusBtnClick1stHC">
+                  </a> <!-- HomeRoomTempPlusBtnClick1stHC -->
+                  <span class="method-name">HomeRoomTempPlusBtnClick1stHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HomeRoomTempPlusBtnClick2ndHC">
+                  </a> <!-- HomeRoomTempPlusBtnClick2ndHC -->
+                  <span class="method-name">HomeRoomTempPlusBtnClick2ndHC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="InstallationListMultipleBack">
+                  </a> <!-- InstallationListMultipleBack -->
+                  <span class="method-name">InstallationListMultipleBack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="IntallationListLabels">
+                  </a> <!-- IntallationListLabels -->
+                  <span class="method-name">IntallationListLabels</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogIn">
+                  </a> <!-- LogIn -->
+                  <span class="method-name">LogIn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LogInMultipleBack">
+                  </a> <!-- LogInMultipleBack -->
+                  <span class="method-name">LogInMultipleBack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginToIntallation">
+                  </a> <!-- LoginToIntallation -->
+                  <span class="method-name">LoginToIntallation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logInBUtton">
+                  </a> <!-- logInBUtton -->
+                  <span class="method-name">logInBUtton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="splashButtonHelpActionCheck">
+                  </a> <!-- splashButtonHelpActionCheck -->
+                  <span class="method-name">splashButtonHelpActionCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="splashButtonHelpContentCheck">
+                  </a> <!-- splashButtonHelpContentCheck -->
+                  <span class="method-name">splashButtonHelpContentCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="splashHelpPresentCheck">
+                  </a> <!-- splashHelpPresentCheck -->
+                  <span class="method-name">splashHelpPresentCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="splashShowcaseButtonCheck">
+                  </a> <!-- splashShowcaseButtonCheck -->
+                  <span class="method-name">splashShowcaseButtonCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/r6/m5c48nfs3sq85qbwpt5mbffr0000gx/T/testng-eclipse-668714465/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.java.com.viessmann.vitotrol.appiumtest.MainTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(32);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'LogInMultipleBack')
+data.setCell(0, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(0, 3, 52618);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'HomeMenuBtnMultipleClick')
+data.setCell(1, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(1, 3, 20701);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'HomeHelpcheck2ndHC')
+data.setCell(2, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(2, 3, 11665);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'HomeRefreshBtn')
+data.setCell(3, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(3, 3, 10813);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'HomeHelpCheck')
+data.setCell(4, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(4, 3, 10081);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'HomeRoomTempPlusBtnClick2ndHC')
+data.setCell(5, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(5, 3, 8626);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'HomeRoomTempPlusBtnClick1stHC')
+data.setCell(6, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(6, 3, 7704);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'HomeRoomTempMiusBtnClick2ndHC')
+data.setCell(7, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(7, 3, 7235);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'HomeRoomTempMiusBtnClick1stHC')
+data.setCell(8, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(8, 3, 6290);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'splashButtonHelpContentCheck')
+data.setCell(9, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(9, 3, 6145);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'HomeOperationModeBtnAction2ndHC')
+data.setCell(10, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(10, 3, 5709);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'HomeOperationModeBtnAction1stHC')
+data.setCell(11, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(11, 3, 3406);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'LoginToIntallation')
+data.setCell(12, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(12, 3, 3149);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'IntallationListLabels')
+data.setCell(13, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(13, 3, 3102);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'splashButtonHelpActionCheck')
+data.setCell(14, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(14, 3, 3074);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'CopyrightText')
+data.setCell(15, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(15, 3, 2754);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'InstallationListMultipleBack')
+data.setCell(16, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(16, 3, 2611);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'HomeHCArrowSwitch')
+data.setCell(17, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(17, 3, 2456);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'HomeArrowLeftBtn')
+data.setCell(18, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(18, 3, 1620);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'splashHelpPresentCheck')
+data.setCell(19, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(19, 3, 1549);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'logInBUtton')
+data.setCell(20, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(20, 3, 1253);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'LogIn')
+data.setCell(21, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(21, 3, 1067);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'splashShowcaseButtonCheck')
+data.setCell(22, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(22, 3, 989);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'HomeHC1Name')
+data.setCell(23, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(23, 3, 808);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'HomeRoomTempPlusBtn')
+data.setCell(24, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(24, 3, 646);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'HomeOperationModeBtn2ndHC')
+data.setCell(25, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(25, 3, 626);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'HomeArrowRightBtn')
+data.setCell(26, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(26, 3, 625);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'HomeMenuBtn')
+data.setCell(27, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(27, 3, 620);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'HomeHelpBtn')
+data.setCell(28, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(28, 3, 610);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'HomeOperationModeBtn')
+data.setCell(29, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(29, 3, 598);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'HomeRoomTempMinusBtn')
+data.setCell(30, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(30, 3, 589);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'LogInInstallationList')
+data.setCell(31, 2, 'test.java.com.viessmann.vitotrol.appiumtest.MainTest')
+data.setCell(31, 3, 296);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HomeHCArrowSwitch</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Heating circuit 2</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HomeHelpcheck2ndHC</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Help<p></span>
+                <span class="reporter-method-output">Navigation<p></span>
+                <span class="reporter-method-output">Opens the Menu Screen.<p></span>
+                <span class="reporter-method-output">Tap or swipe left/right to switch between heating circuits if there are several ones.<p></span>
+                <span class="reporter-method-output">Heating program<p></span>
+                <span class="reporter-method-output">Start or stop central heating or DHW heating.<p></span>
+                <span class="reporter-method-output">Central heating, DHW heating and DHW circulation in accordance with the set time programs.<p></span>
+                <span class="reporter-method-output">DHW heating and DHW circulation in accordance with the set time programs.<p></span>
+                <span class="reporter-method-output">Heating and domestic hot water on reduced temperature for the current heating circuit. This mode overrides time programs.<p></span>
+                <span class="reporter-method-output">Heating and domestic hot water on normal temperature for the current heating circuit. This mode overrides time programs.<p></span>
+                <span class="reporter-method-output">No central heating and no DHW heating. Boiler and DHW system protected against frost.<p></span>
+                <span class="reporter-method-output">Temporary energy saving economy mode.<p></span>
+                <span class="reporter-method-output">Temporary heating with individually adjustable room temperature and DHW heating enabled.<p></span>
+                <span class="reporter-method-output">The User can turn on economy mode if the operation mode is set to heating and there is no reduced time program currently available. There is no possibility to turn on the economy and party mode simultaneously. Detailed information concerning the behaviour of economy and party mode on heating devices supported by Vitotrol App can be found on the following Webpage: www.vitotrol-app.info.<p></span>
+                <span class="reporter-method-output">Room temperature<p></span>
+                <span class="reporter-method-output">Setting the required room temperature for the standard heating mode.<p></span>
+                <span class="reporter-method-output">Data refresh<p></span>
+                <span class="reporter-method-output">Trigger data refresh manually using the button.<p></span>
+                <span class="reporter-method-output">When the application is refreshing data from heating system, the arrow will be animated. The arrow will return to its default state when the application successfully receives the current data.<p></span>
+                <span class="reporter-method-output">Last Update<p></span>
+                <span class="reporter-method-output">This timestamp shows when the last successful data refresh took place.<p></span>
+                <span class="reporter-method-output">Status of connection to Vitodata<p></span>
+                <span class="reporter-method-output">The colour of the Refresh button presents the status of the connection to Vitodata and the result of the most recent data refresh procedure.<p></span>
+                <span class="reporter-method-output">Vitotrol mobile application is not connected to Vitodata.<p></span>
+                <span class="reporter-method-output">Vitotrol mobile application is connected to Vitodata and the last data refresh finished successfully. The application was synchronized with the heating device.<p></span>
+                <span class="reporter-method-output">Vitotrol mobile application is connected to Vitodata but the last data refresh failed. The application was not synchronized with the heating device.<p></span>
+                <span class="reporter-method-output">?Update<p></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">IntallationListLabels</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Name for 1 installation: Vitodens 300-W<p></span>
+                <span class="reporter-method-output">Name for 2 installation: Vitocal 200-A</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HomeRoomTempMiusBtnClick2ndHC</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">21.0?</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HomeOperationModeBtnAction2ndHC</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Home <p></span>
+                <span class="reporter-method-output">Information <p></span>
+                <span class="reporter-method-output">Central heating <p></span>
+                <span class="reporter-method-output">DHW <p></span>
+                <span class="reporter-method-output">Solar energy <p></span>
+                <span class="reporter-method-output">Settings <p></span>
+                <span class="reporter-method-output">Standby mode <p></span>
+                <span class="reporter-method-output">DHW only (Curently selected)<p></span>
+                <span class="reporter-method-output">Heating and DHW <p></span>
+                <span class="reporter-method-output">Constantly normal <p></span>
+                <span class="reporter-method-output">Constantly reduced <p></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">splashButtonHelpContentCheck</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Value: Help<p>Name: Help<p></span>
+                <span class="reporter-method-output">Value: 2<p>Name: Log in<p></span>
+                <span class="reporter-method-output">Value: <p>Name: Log in with the Vitodata user account email and password access details.<p></span>
+                <span class="reporter-method-output">Value: <p>Name: Note:<p></span>
+                <span class="reporter-method-output">Value: <p>Name: When the user account is first registered, login is only possible once the account has been activated. For this, use the activation link sent to you by email.<p></span>
+                <span class="reporter-method-output">Value: 2<p>Name: Showcase<p></span>
+                <span class="reporter-method-output">Value: <p>Name: To start the App, press "Showcase". No data is exchanged with the Vitotronic.<p></span>
+                <span class="reporter-method-output">Value: 2<p>Name: Create access<p></span>
+                <span class="reporter-method-output">Value: <p>Name: Register a new Vitodata user account and assign a system to the Vitotrol App by means of the serial number.For this, the system and the Vitocom 100 LAN1 must be installed and operational.<p></span>
+                <span class="reporter-method-output">Value: <p>Name: Note:<p></span>
+                <span class="reporter-method-output">Value: <p>Name: If a Vitodata user account already exists, cancel with [Back] and use the [Register] function.<p></span>
+                <span class="reporter-method-output">Value: <p>Name: In that case, the system assigned to the Vitotrol App must be set up via Vitodata.<p></span>
+                <span class="reporter-method-output">Value: ?Update<p>Name: ?Update<p></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HomeHelpCheck</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Help<p></span>
+                <span class="reporter-method-output">Navigation<p></span>
+                <span class="reporter-method-output">Opens the Menu Screen.<p></span>
+                <span class="reporter-method-output">Tap or swipe left/right to switch between heating circuits if there are several ones.<p></span>
+                <span class="reporter-method-output">Heating program<p></span>
+                <span class="reporter-method-output">Start or stop central heating or DHW heating.<p></span>
+                <span class="reporter-method-output">Central heating, DHW heating and DHW circulation in accordance with the set time programs.<p></span>
+                <span class="reporter-method-output">DHW heating and DHW circulation in accordance with the set time programs.<p></span>
+                <span class="reporter-method-output">Heating and domestic hot water on reduced temperature for the current heating circuit. This mode overrides time programs.<p></span>
+                <span class="reporter-method-output">Heating and domestic hot water on normal temperature for the current heating circuit. This mode overrides time programs.<p></span>
+                <span class="reporter-method-output">No central heating and no DHW heating. Boiler and DHW system protected against frost.<p></span>
+                <span class="reporter-method-output">Temporary energy saving economy mode.<p></span>
+                <span class="reporter-method-output">Temporary heating with individually adjustable room temperature and DHW heating enabled.<p></span>
+                <span class="reporter-method-output">The User can turn on economy mode if the operation mode is set to heating and there is no reduced time program currently available. There is no possibility to turn on the economy and party mode simultaneously. Detailed information concerning the behaviour of economy and party mode on heating devices supported by Vitotrol App can be found on the following Webpage: www.vitotrol-app.info.<p></span>
+                <span class="reporter-method-output">Room temperature<p></span>
+                <span class="reporter-method-output">Setting the required room temperature for the standard heating mode.<p></span>
+                <span class="reporter-method-output">Data refresh<p></span>
+                <span class="reporter-method-output">Trigger data refresh manually using the button.<p></span>
+                <span class="reporter-method-output">When the application is refreshing data from heating system, the arrow will be animated. The arrow will return to its default state when the application successfully receives the current data.<p></span>
+                <span class="reporter-method-output">Last Update<p></span>
+                <span class="reporter-method-output">This timestamp shows when the last successful data refresh took place.<p></span>
+                <span class="reporter-method-output">Status of connection to Vitodata<p></span>
+                <span class="reporter-method-output">The colour of the Refresh button presents the status of the connection to Vitodata and the result of the most recent data refresh procedure.<p></span>
+                <span class="reporter-method-output">Vitotrol mobile application is not connected to Vitodata.<p></span>
+                <span class="reporter-method-output">Vitotrol mobile application is connected to Vitodata and the last data refresh finished successfully. The application was synchronized with the heating device.<p></span>
+                <span class="reporter-method-output">Vitotrol mobile application is connected to Vitodata but the last data refresh failed. The application was not synchronized with the heating device.<p></span>
+                <span class="reporter-method-output">?Update<p></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">CopyrightText</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">? 2014 Viessmann Werke GmbH & Co. KG</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HomeRoomTempPlusBtnClick2ndHC</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">21.0?</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">HomeOperationModeBtnAction1stHC</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Standby mode <p></span>
+                <span class="reporter-method-output">DHW only <p></span>
+                <span class="reporter-method-output">Heating and DHW (Curently selected)<p></span>
+                <span class="reporter-method-output">Constantly normal <p></span>
+                <span class="reporter-method-output">Constantly reduced <p></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">logInBUtton</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Back<p></span>
+                <span class="reporter-method-output">Log in<p></span>
+                <span class="reporter-method-output">Showcase<p></span>
+                <span class="reporter-method-output">Create access<p></span>
+                <span class="reporter-method-output"><p></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.java.com.viessmann.vitotrol.appiumtest.MainTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">logInBUtton</span>
+                <span class="method-start">19892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">splashHelpPresentCheck</span>
+                <span class="method-start">21147 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CopyrightText</span>
+                <span class="method-start">22698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">splashButtonHelpActionCheck</span>
+                <span class="method-start">25455 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">splashButtonHelpContentCheck</span>
+                <span class="method-start">28532 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">splashShowcaseButtonCheck</span>
+                <span class="method-start">34679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LogIn</span>
+                <span class="method-start">35670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LogInMultipleBack</span>
+                <span class="method-start">36739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LogInInstallationList</span>
+                <span class="method-start">89358 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">InstallationListMultipleBack</span>
+                <span class="method-start">89660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">IntallationListLabels</span>
+                <span class="method-start">92273 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LoginToIntallation</span>
+                <span class="method-start">95377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeHC1Name</span>
+                <span class="method-start">98528 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeMenuBtn</span>
+                <span class="method-start">99337 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeRefreshBtn</span>
+                <span class="method-start">99958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeArrowRightBtn</span>
+                <span class="method-start">110772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeOperationModeBtn</span>
+                <span class="method-start">111398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeOperationModeBtnAction1stHC</span>
+                <span class="method-start">111998 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeRoomTempPlusBtn</span>
+                <span class="method-start">115406 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeRoomTempMinusBtn</span>
+                <span class="method-start">116054 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeHelpBtn</span>
+                <span class="method-start">116644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeMenuBtnMultipleClick</span>
+                <span class="method-start">117255 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeHelpCheck</span>
+                <span class="method-start">137957 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeRoomTempPlusBtnClick1stHC</span>
+                <span class="method-start">148039 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeRoomTempMiusBtnClick1stHC</span>
+                <span class="method-start">155745 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeHCArrowSwitch</span>
+                <span class="method-start">162037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeOperationModeBtn2ndHC</span>
+                <span class="method-start">164495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeArrowLeftBtn</span>
+                <span class="method-start">165122 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeRoomTempPlusBtnClick2ndHC</span>
+                <span class="method-start">166743 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeRoomTempMiusBtnClick2ndHC</span>
+                <span class="method-start">175371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeOperationModeBtnAction2ndHC</span>
+                <span class="method-start">182608 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">HomeHelpcheck2ndHC</span>
+                <span class="method-start">188318 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">200412 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

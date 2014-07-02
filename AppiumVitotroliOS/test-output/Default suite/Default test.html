@@ -1,0 +1,490 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 01 14:21:13 CEST 2014</td>
+</tr>
+<tr><td>Total time:</td><td>180 seconds (180122 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.LogInInstallationList()'><b>LogInInstallationList</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 293 milliseconds
+Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6b&apos;, time: &apos;2013-08-12 15:43:19&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.3&apos;, java.version: &apos;1.7.0_40&apos;
+Session ID: c7ce7b0e-74e5-4cbb-aa2e-1ef877c16ac4
+Driver info: test.java.com.viessmann.vitotrol.appiumtest.SetUp$SwipeableWebDriver
+Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, desired={platformVersion=7.1, platformName=iOS, device=iphone, language=en}, locationContextEnabled=false, platformVersion=7.1, databaseEnabled=false, platformName=iOS, webStorageEnabled=false, device=iphone, language=en, warnings={}, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at test.java.com.viessmann.vitotrol.appiumtest.MainTest.LogInInstallationList(MainTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div><a href='#' onClick='toggleBox("stack-trace927800509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace927800509'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 293 milliseconds
+Build info: version: &apos;2.35.0&apos;, revision: &apos;8df0c6b&apos;, time: &apos;2013-08-12 15:43:19&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.3&apos;, java.version: &apos;1.7.0_40&apos;
+Session ID: c7ce7b0e-74e5-4cbb-aa2e-1ef877c16ac4
+Driver info: test.java.com.viessmann.vitotrol.appiumtest.SetUp$SwipeableWebDriver
+Capabilities [{platform=MAC, javascriptEnabled=true, browserName=iOS, desired={platformVersion=7.1, platformName=iOS, device=iphone, language=en}, locationContextEnabled=false, platformVersion=7.1, databaseEnabled=false, platformName=iOS, webStorageEnabled=false, device=iphone, language=en, warnings={}, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:191)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at test.java.com.viessmann.vitotrol.appiumtest.MainTest.LogInInstallationList(MainTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.CopyrightText()'><b>CopyrightText</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-649744056" onClick='toggleBox("Output-649744056", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-649744056" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-649744056">
+? 2014 Viessmann Werke GmbH & Co. KG<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeArrowLeftBtn()'><b>HomeArrowLeftBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>1</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeArrowRightBtn()'><b>HomeArrowRightBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeHC1Name()'><b>HomeHC1Name</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeHCArrowSwitch()'><b>HomeHCArrowSwitch</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-1541058390" onClick='toggleBox("Output-1541058390", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1541058390" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1541058390">
+Heating circuit 2<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeHelpBtn()'><b>HomeHelpBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeHelpCheck()'><b>HomeHelpCheck</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-1142647723" onClick='toggleBox("Output-1142647723", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1142647723" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1142647723">
+Help<p><br/>
+Navigation<p><br/>
+Opens the Menu Screen.<p><br/>
+Tap or swipe left/right to switch between heating circuits if there are several ones.<p><br/>
+Heating program<p><br/>
+Start or stop central heating or DHW heating.<p><br/>
+Central heating, DHW heating and DHW circulation in accordance with the set time programs.<p><br/>
+DHW heating and DHW circulation in accordance with the set time programs.<p><br/>
+Heating and domestic hot water on reduced temperature for the current heating circuit. This mode overrides time programs.<p><br/>
+Heating and domestic hot water on normal temperature for the current heating circuit. This mode overrides time programs.<p><br/>
+No central heating and no DHW heating. Boiler and DHW system protected against frost.<p><br/>
+Temporary energy saving economy mode.<p><br/>
+Temporary heating with individually adjustable room temperature and DHW heating enabled.<p><br/>
+The User can turn on economy mode if the operation mode is set to heating and there is no reduced time program currently available. There is no possibility to turn on the economy and party mode simultaneously. Detailed information concerning the behaviour of economy and party mode on heating devices supported by Vitotrol App can be found on the following Webpage: www.vitotrol-app.info.<p><br/>
+Room temperature<p><br/>
+Setting the required room temperature for the standard heating mode.<p><br/>
+Data refresh<p><br/>
+Trigger data refresh manually using the button.<p><br/>
+When the application is refreshing data from heating system, the arrow will be animated. The arrow will return to its default state when the application successfully receives the current data.<p><br/>
+Last Update<p><br/>
+This timestamp shows when the last successful data refresh took place.<p><br/>
+Status of connection to Vitodata<p><br/>
+The colour of the Refresh button presents the status of the connection to Vitodata and the result of the most recent data refresh procedure.<p><br/>
+Vitotrol mobile application is not connected to Vitodata.<p><br/>
+Vitotrol mobile application is connected to Vitodata and the last data refresh finished successfully. The application was synchronized with the heating device.<p><br/>
+Vitotrol mobile application is connected to Vitodata but the last data refresh failed. The application was not synchronized with the heating device.<p><br/>
+?Update<p><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeHelpcheck2ndHC()'><b>HomeHelpcheck2ndHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-684119306" onClick='toggleBox("Output-684119306", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-684119306" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-684119306">
+Help<p><br/>
+Navigation<p><br/>
+Opens the Menu Screen.<p><br/>
+Tap or swipe left/right to switch between heating circuits if there are several ones.<p><br/>
+Heating program<p><br/>
+Start or stop central heating or DHW heating.<p><br/>
+Central heating, DHW heating and DHW circulation in accordance with the set time programs.<p><br/>
+DHW heating and DHW circulation in accordance with the set time programs.<p><br/>
+Heating and domestic hot water on reduced temperature for the current heating circuit. This mode overrides time programs.<p><br/>
+Heating and domestic hot water on normal temperature for the current heating circuit. This mode overrides time programs.<p><br/>
+No central heating and no DHW heating. Boiler and DHW system protected against frost.<p><br/>
+Temporary energy saving economy mode.<p><br/>
+Temporary heating with individually adjustable room temperature and DHW heating enabled.<p><br/>
+The User can turn on economy mode if the operation mode is set to heating and there is no reduced time program currently available. There is no possibility to turn on the economy and party mode simultaneously. Detailed information concerning the behaviour of economy and party mode on heating devices supported by Vitotrol App can be found on the following Webpage: www.vitotrol-app.info.<p><br/>
+Room temperature<p><br/>
+Setting the required room temperature for the standard heating mode.<p><br/>
+Data refresh<p><br/>
+Trigger data refresh manually using the button.<p><br/>
+When the application is refreshing data from heating system, the arrow will be animated. The arrow will return to its default state when the application successfully receives the current data.<p><br/>
+Last Update<p><br/>
+This timestamp shows when the last successful data refresh took place.<p><br/>
+Status of connection to Vitodata<p><br/>
+The colour of the Refresh button presents the status of the connection to Vitodata and the result of the most recent data refresh procedure.<p><br/>
+Vitotrol mobile application is not connected to Vitodata.<p><br/>
+Vitotrol mobile application is connected to Vitodata and the last data refresh finished successfully. The application was synchronized with the heating device.<p><br/>
+Vitotrol mobile application is connected to Vitodata but the last data refresh failed. The application was not synchronized with the heating device.<p><br/>
+?Update<p><br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeMenuBtn()'><b>HomeMenuBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeMenuBtnMultipleClick()'><b>HomeMenuBtnMultipleClick</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>20</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeOperationModeBtn()'><b>HomeOperationModeBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeOperationModeBtn2ndHC()'><b>HomeOperationModeBtn2ndHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeOperationModeBtnAction1stHC()'><b>HomeOperationModeBtnAction1stHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-1586404925" onClick='toggleBox("Output-1586404925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1586404925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1586404925">
+Standby mode <p><br/>
+DHW only <p><br/>
+Heating and DHW (Curently selected)<p><br/>
+Constantly normal <p><br/>
+Constantly reduced <p><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeOperationModeBtnAction2ndHC()'><b>HomeOperationModeBtnAction2ndHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-667380621" onClick='toggleBox("Output-667380621", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-667380621" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-667380621">
+Home <p><br/>
+Information <p><br/>
+Central heating <p><br/>
+DHW <p><br/>
+Solar energy <p><br/>
+Settings <p><br/>
+Standby mode <p><br/>
+DHW only (Curently selected)<p><br/>
+Heating and DHW <p><br/>
+Constantly normal <p><br/>
+Constantly reduced <p><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeRefreshBtn()'><b>HomeRefreshBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>10</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeRoomTempMinusBtn()'><b>HomeRoomTempMinusBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeRoomTempMiusBtnClick1stHC()'><b>HomeRoomTempMiusBtnClick1stHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>6</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeRoomTempMiusBtnClick2ndHC()'><b>HomeRoomTempMiusBtnClick2ndHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-1861409291" onClick='toggleBox("Output-1861409291", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1861409291" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1861409291">
+21.0?<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeRoomTempPlusBtn()'><b>HomeRoomTempPlusBtn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeRoomTempPlusBtnClick1stHC()'><b>HomeRoomTempPlusBtnClick1stHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>7</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.HomeRoomTempPlusBtnClick2ndHC()'><b>HomeRoomTempPlusBtnClick2ndHC</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-2058250905" onClick='toggleBox("Output-2058250905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2058250905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2058250905">
+21.0?<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.InstallationListMultipleBack()'><b>InstallationListMultipleBack</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>2</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.IntallationListLabels()'><b>IntallationListLabels</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-1726791928" onClick='toggleBox("Output-1726791928", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1726791928" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1726791928">
+Name for 1 installation: Vitodens 300-W<p><br/>
+Name for 2 installation: Vitocal 200-A<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.LogIn()'><b>LogIn</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>1</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.LogInMultipleBack()'><b>LogInMultipleBack</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>52</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.LoginToIntallation()'><b>LoginToIntallation</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>3</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.logInBUtton()'><b>logInBUtton</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-490558731" onClick='toggleBox("Output-490558731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-490558731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-490558731">
+Back<p><br/>
+Log in<p><br/>
+Showcase<p><br/>
+Create access<p><br/>
+<p><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.splashButtonHelpActionCheck()'><b>splashButtonHelpActionCheck</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>3</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.splashButtonHelpContentCheck()'><b>splashButtonHelpContentCheck</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest<br/>
+<a href="#Output-175176024" onClick='toggleBox("Output-175176024", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-175176024" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-175176024">
+Value: Help<p>Name: Help<p><br/>
+Value: 2<p>Name: Log in<p><br/>
+Value: <p>Name: Log in with the Vitodata user account email and password access details.<p><br/>
+Value: <p>Name: Note:<p><br/>
+Value: <p>Name: When the user account is first registered, login is only possible once the account has been activated. For this, use the activation link sent to you by email.<p><br/>
+Value: 2<p>Name: Showcase<p><br/>
+Value: <p>Name: To start the App, press "Showcase". No data is exchanged with the Vitotronic.<p><br/>
+Value: 2<p>Name: Create access<p><br/>
+Value: <p>Name: Register a new Vitodata user account and assign a system to the Vitotrol App by means of the serial number.For this, the system and the Vitocom 100 LAN1 must be installed and operational.<p><br/>
+Value: <p>Name: Note:<p><br/>
+Value: <p>Name: If a Vitodata user account already exists, cancel with [Back] and use the [Register] function.<p><br/>
+Value: <p>Name: In that case, the system assigned to the Vitotrol App must be set up via Vitodata.<p><br/>
+Value: ?Update<p>Name: ?Update<p><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.splashHelpPresentCheck()'><b>splashHelpPresentCheck</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>1</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+<tr>
+<td title='test.java.com.viessmann.vitotrol.appiumtest.MainTest.splashShowcaseButtonCheck()'><b>splashShowcaseButtonCheck</b><br>Test class: test.java.com.viessmann.vitotrol.appiumtest.MainTest</td>
+<td></td>
+<td>0</td>
+<td>test.java.com.viessmann.vitotrol.appiumtest.MainTest@12a484c7</td></tr>
+</table><p>
+</body>
+</html>
